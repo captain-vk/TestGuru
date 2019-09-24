@@ -4,3 +4,5 @@ class Test < ApplicationRecord
         .where(categories: { title: category_name }).order(id: :desc).pluck(:title)
   end
 end
+
+

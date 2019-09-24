@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(version: 2019_09_24_122916) do
   end
 
   create_table "results", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "test_id", null: false
+    t.integer "user_id"
+    t.integer "test_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["test_id"], name: "index_results_on_test_id"
