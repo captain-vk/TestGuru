@@ -16,7 +16,8 @@ tests = Test.create!([{title: 'Ruby', level: 1, category_id: categories[1]},
 					  {title: 'JavaScript', level: 5, category_id: categories[0]},
 					  {title: 'Java', level: 1, category_id: categories[2]}])
 
-users = User.create([{login: 'Ivan', password: 'qwerty'}])
+users = User.create!([{login: 'Ivan', password: 'qwerty'},
+					 {login: 'Petr', password: 'asdfgh'}])								
 
 questions = Question.create!([{body: 'Кто создал язык Ruby?', test_id: tests[0]},
 						  {body: 'Что такое замыкания?', test_id: tests[1]},
@@ -25,3 +26,7 @@ questions = Question.create!([{body: 'Кто создал язык Ruby?', test_
 answers = Answer.create!([{body: 'Юкихиро Мацумото', correct: true, question_id: questions[0]},
 						  {body: 'Когда проводка замыкает', correct: false, question_id: questions[1]},
 						  {body: 'Garbage collector', correct: true, question_id: questions[2]}])
+
+results = Result.create!([{user_id: users[0], test_id: tests[0]},
+                		   {user_id: users[1], test_id: tests[2]},
+               			   {user_id: users[0], test_id: tests[1]}])
