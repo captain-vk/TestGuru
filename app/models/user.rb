@@ -3,6 +3,7 @@
 class User < ApplicationRecord
   has_many :tests, through: :results
   has_many :results
+  has_many :created_tests, class_name: 'Test', foreign_key: 'author_id'
 
   def search_test(level)
     Test.joins('INNER JOIN results ON results.test_id = tests.id')
