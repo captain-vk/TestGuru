@@ -12,21 +12,21 @@ categories = Category.create!([{title: 'Frontend'},
 							   {title: 'Backend'},
 							   {title: 'Mobile'}])
 
-tests = Test.create!([{title: 'Ruby', level: 1, category_id: categories[1].id, author_id: users[0].id },
-					  {title: 'JavaScript', level: 5, category_id: categories[0].id, author_id: users[0].id },
- 					  {title: 'Java', level: 1, category_id: categories[2].id, author_id: users[1].id }])
+tests = Test.create!([{title: 'Ruby', level: 1, category: categories[1], author: users[0] },
+					  {title: 'JavaScript', level: 5, category: categories[0], author: users[0] },
+ 					  {title: 'Java', level: 1, category: categories[2], author: users[1] }])
 
 users = User.create!([{login: 'Ivan', password: 'qwerty'},
 					 {login: 'Petr', password: 'asdfgh'}])								
 
-questions = Question.create!([{body: 'Кто создал язык Ruby?', test_id: tests[0].id },
-						  {body: 'Что такое замыкания?', test_id: tests[1].id },
-						  {body: 'Переведи на англ. Сборщик мусора', test_id: tests[2].id }])
+questions = Question.create!([{body: 'Кто создал язык Ruby?', test: tests[0] },
+						  {body: 'Что такое замыкания?', test: tests[1] },
+						  {body: 'Переведи на англ. Сборщик мусора', test: tests[2] }])
 
-answers = Answer.create!([{body: 'Юкихиро Мацумото', correct: true, question_id: questions[0].id },
-						  {body: 'Когда проводка замыкает', correct: false, question_id: questions[1].id },
-						  {body: 'Garbage collector', correct: true, question_id: questions[2].id }])
+answers = Answer.create!([{body: 'Юкихиро Мацумото', correct: true, question: questions[0] },
+						  {body: 'Когда проводка замыкает', correct: false, question: questions[1] },
+						  {body: 'Garbage collector', correct: true, question: questions[2] }])
 
-results = Result.create!([{user_id: users[0].id, test_id: tests[0].id },
-                		  {user_id: users[1].id, test_id: tests[2].id },
-               			  {user_id: users[0].id, test_id: tests[1].id }])
+results = Result.create!([{user: users[0], test: tests[0] },
+                		  {user: users[1], test: tests[2] },
+               			  {user: users[0], test: tests[1] }])
