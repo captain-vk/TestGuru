@@ -14,7 +14,7 @@ categories = Category.create!([{title: 'Frontend'},
 
 tests = Test.create!([{title: 'Ruby', level: 1, category_id: categories[1].id, author_id: users[0].id },
 					  {title: 'JavaScript', level: 5, category_id: categories[0].id, author_id: users[0].id },
-					  {title: 'Java', level: 1, category_id: categories[2].id, author_id: users[1].id }])
+ 					  {title: 'Java', level: 1, category_id: categories[2].id, author_id: users[1].id }])
 
 users = User.create!([{login: 'Ivan', password: 'qwerty'},
 					 {login: 'Petr', password: 'asdfgh'}])								
