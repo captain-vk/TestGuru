@@ -13,20 +13,20 @@ categories = Category.create!([{title: 'Frontend'},
 							   {title: 'Mobile'}])
 
 tests = Test.create!([{title: 'Ruby', level: 1, category: categories[1], author: users[0] },
-					  {title: 'JavaScript', level: 5, category: categories[0], author: users[0] },
- 					  {title: 'Java', level: 1, category: categories[2], author: users[1] }])
+ 					  {title: 'JavaScript', level: 5, category: categories[0], author: users[0] },
+  					  {title: 'Java', level: 1, category: categories[2], author: users[1] }])
 
 users = User.create!([{login: 'Ivan', password: 'qwerty'},
-					 {login: 'Petr', password: 'asdfgh'}])								
+   					  {login: 'Petr', password: 'asdfgh'}])								
 
 questions = Question.create!([{body: 'Кто создал язык Ruby?', test: tests[0] },
-						  {body: 'Что такое замыкания?', test: tests[1] },
-						  {body: 'Переведи на англ. Сборщик мусора', test: tests[2] }])
+						      {body: 'Что такое замыкания?', test: tests[1] },
+						      {body: 'Переведи на англ. Сборщик мусора', test: tests[2] }])
 
 answers = Answer.create!([{body: 'Юкихиро Мацумото', correct: true, question: questions[0] },
 						  {body: 'Когда проводка замыкает', correct: false, question: questions[1] },
 						  {body: 'Garbage collector', correct: true, question: questions[2] }])
 
 results = Result.create!([{user: users[0], test: tests[0] },
-                		  {user: users[1], test: tests[2] },
-               			  {user: users[0], test: tests[1] }])
+                 		  {user: users[1], test: tests[2] },
+                		  {user: users[0], test: tests[1] }])

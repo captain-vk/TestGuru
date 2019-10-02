@@ -5,6 +5,8 @@ class User < ApplicationRecord
   has_many :results, dependent: :destroy
   has_many :created_tests, class_name: 'Test', foreign_key: 'author_id', dependent: :nullify
 
+  validates :login, :password, presence: true  
+
   def search_test(level)
     tests.where(tests: { level: level })
   end
