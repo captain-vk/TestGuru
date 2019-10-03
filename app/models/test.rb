@@ -10,7 +10,7 @@ class Test < ApplicationRecord
 
   validates :title, presence: true  
   validates :level, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
-  validates :title, uniqueness: { scope: :level, message: "Error! Enter a different name " }  
+  validates :title, uniqueness: { scope: :level, message: "Error! Enter a different name" }  
 
   scope :easy, -> { where(level: 0..1) }      
   scope :middle, -> { where(level: 2..4) }    
@@ -21,9 +21,4 @@ class Test < ApplicationRecord
       .where(categories: { title: category_name }).order(id: :desc).pluck(:title)
   end
 
-private
-
-  def validate_count_answers
-    errors.add(:) if question.answers.length > 4 
-  end
 end
