@@ -8,9 +8,9 @@ class Answer < ApplicationRecord
 
   scope :correct, -> { where(correct: true) }
 
-private
+  private
 
   def validate_count_answers
-    errors.add(:base, 'Answers > 4!') if question.answers.count >= 4 
-  end  
+    errors.add(:base, 'Answers > 4!') if question.answers.count >= 4
+  end
 end
