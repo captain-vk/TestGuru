@@ -21,6 +21,7 @@ tests = Test.create!([{title: 'Ruby', level: 1, category: categories[1], author:
 
 questions = Question.create!([{body: 'Кто создал язык Ruby?', test: tests[0] },
 						      {body: 'Что такое замыкания?', test: tests[1] },
+						      {body: 'Что такое ЯП?', test: tests[1] },
 						      {body: 'Переведи на англ. Сборщик мусора', test: tests[2] }])
 
 answers = Answer.create!([{body: 'Юкихиро Мацумото', correct: true, question: questions[0] },
