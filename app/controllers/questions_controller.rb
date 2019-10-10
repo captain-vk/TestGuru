@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
-  before_action :find_test
+  before_action :find_test, only: %w[index new create]
+  before_action :find_question, only: %w[show destroy]
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
 
   def index
@@ -9,7 +10,6 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @question = Question.find(params[:id])
     render plain: @question.body
   end
 
@@ -21,7 +21,6 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question = Question.find(params[:id])
     @question.destroy
     render plain: 'Вопрос удален'
   end
@@ -32,6 +31,10 @@ class QuestionsController < ApplicationController
     @test = Test.find(params[:test_id])
   end
 
+  def find_question
+    @question = Question.find(params[:id])
+  end  
+
   def question_params
     params.require(:question).permit(:body)
   end
@@ -40,3 +43,4 @@ class QuestionsController < ApplicationController
     render plain: 'Не найдено!'
   end
 end
+# -X DELETE http://localhost:3000/user/100

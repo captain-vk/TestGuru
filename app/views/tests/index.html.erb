@@ -1,0 +1,18 @@
+<h1>Tests</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Level</th>
+    <th>Category</th>
+    <th>Author</th>
+
+  <% @tests.each do |test| %>
+    <tr>
+      <td><%= test.title %></td>
+      <td><%= test.level %></td>
+      <td><%= test.category.title %></td>
+      <td><%= test.author.login %></td>      
+    </tr>
+  <% end %>
+</table>

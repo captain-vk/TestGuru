@@ -1,0 +1,24 @@
+<p>
+  <strong>Title</strong>
+    <%= @test.title %>
+</p>
+
+<p>
+  <strong>Level</strong>
+    <%= @test.level %>
+</p>
+
+<p>
+  <strong>Category</strong>
+    <%= @test.category.title %>
+</p>
+
+<h4>Questions of current test:</h4>
+  <% @test.questions.each do |question| %>
+    <tr>
+      <td><%= question.body %></td> 
+      </br>
+    </tr>
+  <% end %>
+
+</p>
