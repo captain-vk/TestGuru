@@ -13,5 +13,9 @@ class TestsController < ApplicationController
     @test = Test.new
   end
 
+  def create
+    @test = Test.new(params[:test])
+
+  end
 
 end
