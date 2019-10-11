@@ -43,4 +43,3 @@ class QuestionsController < ApplicationController
     render plain: 'Не найдено!'
   end
 end
-# -X DELETE http://localhost:3000/user/100
