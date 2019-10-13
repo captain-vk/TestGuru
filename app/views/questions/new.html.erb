@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-<h1>Create New Question</h1>
-
-<form action="/tests/<%=@test.id%>/questions" method="post">
-  <p>
-  <label for="question-title">Title:</label>
-  <input name ="authenticity_token" value="<%=form_authenticity_token%>" type="hidden">  
-  <input type="text" name="question[body]" id="question-body">
-  </p><br>
-
-<input type="submit" value="Create">
-</form>
-</html>
+<p>
+  <%= link_to 'Tests', tests_path%>
+</p>
+<h1>Create New Test</h1>
+<%= render 'form'%>

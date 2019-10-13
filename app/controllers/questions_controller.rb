@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
-  before_action :find_test, only: %w[index new create]
-  before_action :find_question, only: %w[show destroy]
-  rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
+  before_action :find_test, only: %w[new create]
+  before_action :find_question, only: %w[show edit update destroy]
+  # rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
 
   def index
     render json: @test.questions
@@ -13,16 +13,26 @@ class QuestionsController < ApplicationController
     render plain: @question.body
   end
 
-  def new; end
+  def edit; end
+
+  def new;  end
 
   def create
     @question = @test.questions.build(question_params)
-    render plain: 'Вопрос создан' if @question.save
+    redirect_to @test if @question.save
+  end
+
+  def update
+    if @test.question.update(question_params)
+      redirect_to test_questions_path
+    else
+      render :edit
+    end
   end
 
   def destroy
-    @question.destroy
-    render plain: 'Вопрос удален'
+    @test.question.destroy
+    redirect_to test_questions_path
   end
 
   private

@@ -1,12 +1,12 @@
 <footer class="footer">
   <small>
-     <a href="https://github.com/captain-vk/TestGuru">TestGuru</a>
-    by <%= link_to 'captain-vk', '/about/author' %>
+     <%= link_to 'TestGuru', github_url('captain-vk', 'TestGuru') %>
+    by <%= link_to 'captain-vk','/about/author' %>
   </small>
   <nav>
     <ul>
       <li><a href="http://Thinknetica.com/">Учебный проект в онлайн-школе Thinknetica</a></li>
-      <li><%= Date.today.year %></li>      
+      <li><%= current_year %></li>      
     </ul>
   </nav>
 </footer>

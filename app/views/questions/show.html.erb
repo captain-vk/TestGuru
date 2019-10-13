@@ -18,11 +18,12 @@
 </p>
 
 <p><strong>Questions of current test:</strong></p>
-  <table>
-    <%= render @test.questions %>
-  </table> 
-</p>
-
+  <% @test.questions.each do |question| %>
+    <tr>
+      <td><%= question.body %></td> 
+      </br>
+    </tr>
+  <% end %>
 <p>
-  <%= link_to 'Create New Question', new_test_question_path(@test)%>  
+  <%= link_to 'Create New Question', new_test_question_path(@test)%>
 </p>
