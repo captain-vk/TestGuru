@@ -3,36 +3,40 @@
 class QuestionsController < ApplicationController
   before_action :find_test, only: %w[new create]
   before_action :find_question, only: %w[show edit update destroy]
-  # rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
 
-  def index
-    render json: @test.questions
-  end
+  rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
 
   def show
-    render plain: @question.body
-  end
-
-  def edit; end
-
-  def new;  end
-
-  def create
-    @question = @test.questions.build(question_params)
-    redirect_to @test if @question.save
+    redirect_to test_path(@question.test)
   end
 
   def update
-    if @test.question.update(question_params)
-      redirect_to test_questions_path
+    if @question.update(question_params)
+      redirect_to @question
     else
       render :edit
     end
   end
 
+  def create
+    @question = @test.questions.build(question_params)
+
+    if @question.save
+      redirect_to @question
+    else
+      render :new
+    end
+  end
+
+  def new
+    @question = @test.questions.build
+  end
+
+  def edit; end
+
   def destroy
-    @test.question.destroy
-    redirect_to test_questions_path
+    @question.destroy
+    redirect_to test_path(@question.test)
   end
 
   private
@@ -43,13 +47,13 @@ class QuestionsController < ApplicationController
 
   def find_question
     @question = Question.find(params[:id])
-  end  
+  end
 
   def question_params
     params.require(:question).permit(:body)
   end
 
   def rescue_with_question_not_found
-    render plain: 'Не найдено!'
+    render plain: 'Question not found'
   end
 end

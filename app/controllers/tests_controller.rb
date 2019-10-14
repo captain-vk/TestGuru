@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TestsController < ApplicationController
   before_action :find_test, only: %w[show edit update destroy]
 
