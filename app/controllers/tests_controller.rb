@@ -9,9 +9,7 @@ class TestsController < ApplicationController
     @tests = Test.all
   end
 
-  def show
-    @questions = @test.questions.all
-  end
+  def show; end
 
   def edit; end
 
