@@ -28,6 +28,6 @@ answers = Answer.create!([{body: 'Юкихиро Мацумото', correct: tru
 						  {body: 'Когда проводка замыкает', correct: false, question: questions[1] },
 						  {body: 'Garbage collector', correct: true, question: questions[2] }])
 
-results = Result.create!([{user: users[0], test: tests[0] },
+test_passage = Result.create!([{user: users[0], test: tests[0] },
                  		  {user: users[1], test: tests[2] },
                 		  {user: users[0], test: tests[1] }])
