@@ -7,6 +7,10 @@ class User < ApplicationRecord
 
   validates :login, :password, presence: true
 
+  def test_passage(test)
+    test_passages.order(id: :desc).find_by(test_id: test.id)
+  end
+
   def search_test(level)
     tests.search_by_level(level)
   end
