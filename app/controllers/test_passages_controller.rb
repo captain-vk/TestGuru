@@ -1,29 +1,28 @@
 class TestPassagesController < ApplicationController
+
+  before_action :set_test_passage, only: %i[show update result]
+
+  def show
+
+  end
+
+  def result
+
+  end
+
   def update
-    @test = Test.find(params[:id]) 
+    @test_passage.accept!(params[:answer_ids])
 
-    if @test.update(test_params)
-      redirect_to @test
+    if @test_passage.completed?
+      redirect_to result_test_passage_path(@test_passage)
     else
-      render :edit
+      render :show
     end
-
-   def destroy
-    @test = Test.find(params[:id])
-
-    @test.destroy
-    redirect_to tests_path
-   end 
-
-   def start
-    @test = Test.find(params[:id])
-    @user.tests.push
   end
 
   private
 
-  def test_params
-    params.require(:test).permit(:title, :level, :category_id)
+  def set_test_passage
+    @test_passage = TestPassage.find(params[:id])
   end
-
 end

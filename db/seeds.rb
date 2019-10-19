@@ -19,8 +19,6 @@ tests = Test.create!([{title: 'Ruby', level: 1, category: categories[1], author:
  					  {title: 'JavaScript', level: 5, category: categories[0], author: users[0] },
   					  {title: 'Java', level: 1, category: categories[2], author: users[1] }])
 
-
-
 questions = Question.create!([{body: 'Кто создал язык Ruby?', test: tests[0] },
 						      {body: 'Что такое замыкания?', test: tests[1] },
 						      {body: 'Что такое ЯП?', test: tests[1] },
