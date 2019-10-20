@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TestPassage < ApplicationRecord
   belongs_to :user
   belongs_to :test
@@ -6,13 +8,29 @@ class TestPassage < ApplicationRecord
   before_validation :before_validation_set_first_question, on: :create
 
   def accept!(answer_ids)
-    self.correct_questions += 1  if correct_answer?(answer_ids)
+    self.correct_questions += 1 if correct_answer?(answer_ids)
     self.current_question = next_question
     save!
   end
 
   def completed?
     current_question.nil?
+  end
+
+  def passed
+    result >= 85
+  end
+
+  def result
+    (correct_questions.to_f / questions_count) * 100
+  end
+
+  def questions_count
+    test.questions.count
+  end
+
+  def number_of_current_question
+    test.questions.order(:id).where('id < ?', current_question.id).length + 1
   end
 
   private
@@ -32,5 +50,5 @@ class TestPassage < ApplicationRecord
 
   def before_validation_set_first_question
     self.current_question = test.questions.first if test.present?
-  end    
+  end
 end

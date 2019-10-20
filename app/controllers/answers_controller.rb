@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AnswersController < ApplicationController
   before_action :set_answer, only: %w[show edit update destroy]
   before_action :set_question, only: %w[new create]
@@ -53,4 +55,3 @@ class AnswersController < ApplicationController
     render plain: 'Answer not found'
   end
 end
-
