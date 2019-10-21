@@ -49,7 +49,7 @@ class TestPassage < ApplicationRecord
   end
 
   def before_validation_set_question
-    self.current_question = if current_question.nil?
+    self.current_question = if new_record?
                               test.questions.first
                             else
                               next_question
