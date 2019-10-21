@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class TestPassage < ApplicationRecord
-
   PERCENT_CORRECT_ANSWERS = 85
 
   belongs_to :user
@@ -50,10 +49,10 @@ class TestPassage < ApplicationRecord
   end
 
   def before_validation_set_question
-    if current_question.nil?
-      self.current_question = test.questions.first
-    else
-      self.current_question = next_question
-    end
+    self.current_question = if current_question.nil?
+                              test.questions.first
+                            else
+                              next_question
+                            end
   end
 end
