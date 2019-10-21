@@ -1,13 +1,13 @@
 <h1>The '<%= @test_passage.test.title %>' Test was completed!</h1>
 
-<% if  @test_passage.passed %>
+<% if  @test_passage.passed? %>
       <h2>Тест сдан:</h2>
       <p>Результат:
-        <span style="color: green"><%= @test_passage.result %>%</span></p>
+      <span class="succes"><%= @test_passage.result %></span></p>
 <% else %>
     <h2>Тест не сдан</h2>
     <p>Результат:
-      <span style="color: red"><%= @test_passage.result %>%</span></p>
+      <span class="fail"><%= @test_passage.result %></span></p>
 <% end %>
 
 <%= link_to 'Back', tests_path %>
