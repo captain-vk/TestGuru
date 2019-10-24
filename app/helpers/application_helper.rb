@@ -9,7 +9,7 @@ module ApplicationHelper
     "https://github.com/#{author}/#{repo}"
   end
 
-   def flash_message(type)
+  def flash_message(type)
     content_tag :p, flash[type], class: "flash #{type}"
-  end 
+ end
 end
