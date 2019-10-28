@@ -11,17 +11,14 @@
 
   <body>
     <div class="nav user">
-      <% if logged_in? %>
+      <% if user_signed_in? %>
     <h2>Welcome, <%= current_user.login %> Guru</h2>
         <%= link_to 'TestGuru', root_path %> 
-        <%= link_to 'Log out', logout_path, method: :delete %>
-  <% else %>
-    <ul>
-      <li><%= link_to "Register", signup_path %></li>
-      <li><%= link_to "Log In", login_path %></li>
-    </ul>
+        <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+
   <% end %>
   </div>
+  <% render 'shared/flash' %>
     <%= yield %>
   </body>
   <div class="container">
