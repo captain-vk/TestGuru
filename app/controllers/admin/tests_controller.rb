@@ -30,7 +30,7 @@ class Admin::TestsController < Admin::BaseController
 
   def update
     if @test.update(test_params)
-      redirect_to @test
+      redirect_to admin_tests_path(@test)
     else
       render :edit
     end
@@ -38,7 +38,7 @@ class Admin::TestsController < Admin::BaseController
 
   def destroy
     @test.destroy
-    redirect_to tests_path
+    redirect_to admin_tests_path(@test)
   end
 
   def start
@@ -57,7 +57,7 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def test_params
-    params.require(:test).permit(:title, :category_id, :author_id)
+    params.require(:test).permit(:title, :category_id, :level, :author_id =>[:current_user])
   end
 
   def rescue_with_test_not_found

@@ -15,7 +15,7 @@
     </p>   
     <p>
       <%= form.label :author_id %><br>
-      <%= form.collection_select :author_id, User.all, :id, :login, prompt: true %>
-    </p>
+      <%= form.select "test", "author_id", current_user, :id %>
+    </p>       
     <p><%= form.submit%></p>
 <% end %>
