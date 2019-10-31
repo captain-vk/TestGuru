@@ -20,6 +20,7 @@ class Admin::TestsController < Admin::BaseController
 
   def create
     @test = Test.new(test_params)
+    @test.author_id = @current_user.id
 
     if @test.save
       redirect_to admin_tests_path(@test)
@@ -57,7 +58,7 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def test_params
-    params.require(:test).permit(:title, :category_id, :level, :author_id =>[:current_user])
+    params.require(:test).permit(:title, :category_id, :level, :author_id)
   end
 
   def rescue_with_test_not_found
