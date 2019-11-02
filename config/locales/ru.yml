@@ -1,0 +1,25 @@
+ru:
+  hello: "Привет!"
+
+  tests:
+    index:
+      header: "Тесты"
+
+  helpers:
+    select:
+      promt: "Выберите"
+    submit:
+      test:
+        create: "Создать Тест"
+    label:
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+
+  admin:    
+    tests:
+      create: 
+        success: "Тест успешно создан"
+      index:
+        header: "Доступные тесты" 
