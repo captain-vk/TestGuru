@@ -1,5 +1,13 @@
 ru:
-  hello: "Привет!"
+  links:
+    show: "Показать"
+    edit: "Редактировать"
+    delete: "Удалить"
+    back: "Назад"
+    next: "Следующий вопрос"
+    delete_confirmation: "Вы уверены?"
+    new_test: "Новый Тест"
+    new_question: "Новый вопрос"
 
   tests:
     index:
@@ -7,7 +15,7 @@ ru:
 
   helpers:
     select:
-      promt: "Выберите"
+      promt: "Выбери категорию"
     submit:
       test:
         create: "Создать Тест"
@@ -17,9 +25,29 @@ ru:
         level: "Уровень"
         category_id: "Категория"
 
-  admin:    
+  test_passages:
+    result:
+      header: "Тест '%{title}' успешно завершен!"
+      all_tests: "Все тесты"
+
+  admin:
     tests:
-      create: 
+      create:
         success: "Тест успешно создан"
       index:
-        header: "Доступные тесты" 
+        header: "Доступные тесты"
+        title: "Название"
+        category: "Категория"
+        level: "Уровень"
+        questions: "Вопросы"
+        actions: "Действие"
+      show:
+        header: "Доступные тесты"
+        title: "Название"
+        category: "Категория"
+        level: "Уровень"
+        questions: "Вопросы"
+        actions: "Действие"
+      form:
+        selector: "Выберите категорию"
+

@@ -1,36 +1,13 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  links:
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    back: "Back"
+    next: "Next"
+    delete_confirmation: "Are you sure?"
+    new_test: "New Test"
+    new_question: "New question"
 
   tests:
     index:
@@ -38,7 +15,7 @@ en:
 
   helpers:
     select:
-      promt: "Please select"
+      promt: "Select Category"
     submit:
       test:
         create: "Create Test"
@@ -48,9 +25,25 @@ en:
         level: "Level"
         category_id: "Category"
 
-  admin:    
+  test_passages:
+    result:
+      header: "The '%{title}' test was completed!"
+      all_tests: "All tests"
+
+  admin:
     tests:
-      create: 
-        success: "Test has been successfully created"
+      create:
+        success: "Test was successfully created"
       index:
-        header: "Tricky Tests"
+        header: "Tricky tests"
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        action: "Action"
+      show:
+        header: "Tricky tests"
+        question: "Question"
+        action: "Action"
+        level: "Level"
+      form:
+        selector: "Select category"        

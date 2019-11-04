@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def default_url_options
-    { lang: I18n.locale }
+    { lang: I18n.locale } ? {} : { lang: I18n.locale }.merge
   end
 
   private
@@ -24,5 +24,5 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     I18n.locale = I18n.locale_available?(params[:lang]) ? params[:lang] : I18n.default_locale
-  end  
+  end
 end
