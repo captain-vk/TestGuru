@@ -20,8 +20,7 @@ class Admin::QuestionsController < Admin::BaseController
     @question = @test.questions.build(question_params)
 
     if @question.save
-    flash['alert alert-info'] = 'Вопрос создан.'
-    redirect_to [:admin, @question.test]
+    redirect_to [:admin, @question.test], notice:'Вопрос создан.'
     else
       render :new
     end
@@ -34,8 +33,7 @@ class Admin::QuestionsController < Admin::BaseController
   def edit; end
 
   def destroy
-    flash['alert alert-info'] = 'Вопрос удален.'
-    redirect_to [:admin, @question.test]
+    redirect_to [:admin, @question.test], notice: 'Вопрос удален.'
   end
 
   private

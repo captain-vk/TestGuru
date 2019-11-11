@@ -18,8 +18,7 @@ class Admin::AnswersController < Admin::BaseController
     @answer = @question.answers.build(answer_params)
 
     if @answer.save
-      flash['alert alert-info'] = 'Ответ создан.'
-      redirect_to [:admin, @answer]
+      redirect_to [:admin, @answer], notice: 'Ответ создан.'
     else
       render :new
     end
@@ -27,8 +26,7 @@ class Admin::AnswersController < Admin::BaseController
 
   def update
     if @answer.update(answer_params)
-      flash['alert alert-info'] = 'Ответ обновлен.'
-      redirect_to [:admin, @answer]
+      redirect_to [:admin, @answer], notice: 'Ответ обновлен.'
     else
       render :edit
     end

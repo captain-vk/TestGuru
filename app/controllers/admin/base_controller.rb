@@ -7,7 +7,7 @@ class Admin::BaseController < ApplicationController
   private
 
   def admin_required!
-    flash['alert alert-warning'] = 'You are not authorized for view this page.' unless current_user.is_a?(Admin)
-    redirect_to root_path
+    unless current_user.is_a?(Admin)
+    redirect_to root_path, notice: 'You are not authorized for view this page.'
   end
 end
