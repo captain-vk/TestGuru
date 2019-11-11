@@ -23,7 +23,8 @@ class Admin::TestsController < Admin::BaseController
     @test.author_id = @current_user.id
 
     if @test.save
-      redirect_to [:admin, @test], notice: t('.success')
+      flash['alert alert-info'] = t('.success')
+      redirect_to [:admin, @test]
     else
       render :new
     end

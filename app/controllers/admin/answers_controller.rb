@@ -18,7 +18,8 @@ class Admin::AnswersController < Admin::BaseController
     @answer = @question.answers.build(answer_params)
 
     if @answer.save
-      redirect_to admin_answer_path(@answer)
+      flash['alert alert-info'] = 'Ответ создан.'
+      redirect_to [:admin, @answer]
     else
       render :new
     end
@@ -26,7 +27,8 @@ class Admin::AnswersController < Admin::BaseController
 
   def update
     if @answer.update(answer_params)
-      redirect_to admin_answer_path(@answer)
+      flash['alert alert-info'] = 'Ответ обновлен.'
+      redirect_to [:admin, @answer]
     else
       render :edit
     end

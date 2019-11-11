@@ -1,0 +1,426 @@
+[33mcommit 45daaec50105db703fc6d1acff3305a2225fb692[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/part12[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Nov 5 15:25:46 2019 +0300
+
+    part12_finish_fix
+
+[33mcommit 2434b3114f81f9275dfbaa50fc9f27e4e1ba7d83[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Mon Nov 4 14:06:02 2019 +0300
+
+    part12_finish
+
+[33mcommit c9bf2dfc3b50f8872b18f3896ca14ff5350676a7[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Nov 3 01:07:05 2019 +0300
+
+    part12_start_locale
+
+[33mcommit 83dfa53e588f36071a7d6f4f9de00c2a5290f82f[m[33m ([m[1;31morigin/part11[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mpart12[m[33m, [m[1;32mmaster[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Fri Nov 1 11:28:42 2019 +0300
+
+    part11_fix_review
+
+[33mcommit edd2cff1da5d08a26021ad20e88127a766f77633[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Oct 31 23:08:40 2019 +0300
+
+    part11_finish
+
+[33mcommit 8151e1bf9156f9aa23bb6bb9509c0447268787e6[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Thu Oct 31 17:20:58 2019 +0300
+
+    part11_devise_edit
+
+[33mcommit 9802a1478ab115ae68871ca50389966a714a6157[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Oct 31 02:04:20 2019 +0300
+
+    part11_author_admin
+
+[33mcommit fc0ef1a7e34e2ae0a63a22cf50b06deaad02b742[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Oct 30 16:41:59 2019 +0300
+
+    part11
+
+[33mcommit 5028a3124c277f1132a441723032c3d8c7bcc2c7[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Oct 29 19:25:52 2019 +0300
+
+    part11_admin
+
+[33mcommit 4fddec23d9bc850488b698197736a1f521322044[m[33m ([m[1;32mpart11[m[33m)[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Mon Oct 28 23:33:07 2019 +0300
+
+    part11_devise_views
+
+[33mcommit 5b780c4872a17dbc6d3194345e05024a24c748b1[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Oct 28 18:44:17 2019 +0300
+
+    part11_start
+
+[33mcommit e555f2b16a2221f4a756b2999f4846744b3efa19[m[33m ([m[1;31morigin/part10[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Fri Oct 25 17:53:20 2019 +0300
+
+    part10_finished
+
+[33mcommit 3521cfb04a09c7ffa6d0fc5069f9c38f364ad7f5[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Oct 24 23:15:55 2019 +0300
+
+    part10_logout
+
+[33mcommit cba43c76887c7783858f7ad158f59f70a2e5da57[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Oct 24 00:35:27 2019 +0300
+
+    part10_nav_user
+
+[33mcommit 09dba3bdd3cac2292c7a83658ec716aa76ad5b99[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Oct 23 19:19:17 2019 +0300
+
+    part10_sessions
+
+[33mcommit e960939bebc29aeb5d5a1aebf441ee619b438239[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Tue Oct 22 23:50:00 2019 +0300
+
+    part10_start
+
+[33mcommit 8898909658816cb61b15b95455303ce79ab8c567[m[33m ([m[1;31morigin/part9[m[33m)[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Mon Oct 21 23:00:31 2019 +0300
+
+    part9_last_fix!
+
+[33mcommit 67e893080000eb8eac6ba59a4cffe1cc236e612d[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Oct 21 15:55:27 2019 +0300
+
+    part9_fix_finish_rubocop
+
+[33mcommit eca3173acf40d473e90cac043cefd10dd48c0236[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Oct 21 15:07:30 2019 +0300
+
+    part9_fix_finish
+
+[33mcommit 430ec502539b44a76bfe7c60c5c90f3be01a5982[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Oct 20 16:20:56 2019 +0300
+
+    part9_finish
+
+[33mcommit 62faf8f3c63569fbc5decff91cd75db1c2da4c6d[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Oct 20 00:42:14 2019 +0300
+
+    part9_test_start
+
+[33mcommit e814b2a16c5a7d0084813a2c959e0e68511300f0[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Sat Oct 19 14:41:08 2019 +0300
+
+    part9_fix_seed
+
+[33mcommit 4d5f4d3d11062948b4287753913f6fa98fb8cfcc[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Fri Oct 18 23:57:08 2019 +0300
+
+    part9_start
+
+[33mcommit 65fec04ce7e9d75d6e2683cea4826a3322b805a1[m[33m ([m[1;31morigin/part8[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Thu Oct 17 19:33:42 2019 +0300
+
+    part9_start
+
+[33mcommit 3ff3b7fa3e4cba76c722f30eb23a406274cb2891[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Thu Oct 17 18:27:18 2019 +0300
+
+    part9_start
+
+[33mcommit 2504815f0df5352da84de94e92c6095a87227b63[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Tue Oct 15 16:45:22 2019 +0300
+
+    part8_fix_finish
+
+[33mcommit e5b02c991360f3b1bcfa20de73f6d5ebeac6095f[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Tue Oct 15 14:35:11 2019 +0300
+
+    part8_fix_finish
+
+[33mcommit 714f5a69e29fea9ec0d4e0e4c52b7b15d76314b7[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Mon Oct 14 22:47:02 2019 +0300
+
+    part8_finished
+
+[33mcommit 7549c72db5dbdb697fe8e9f75a91dcf8a0bb2853[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Mon Oct 14 22:39:54 2019 +0300
+
+    part8_finished
+
+[33mcommit c7d9789587d2937aca6165bc22d06cd2cdb550cb[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Oct 14 13:25:45 2019 +0300
+
+    part8_finish
+
+[33mcommit 3d7c0ab166567c522c70251f2c0b11e485d87a14[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Oct 13 23:06:26 2019 +0300
+
+    part8_add_questions
+
+[33mcommit 176de026d08981beac320bfa96a5a71b2bddeaa8[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sat Oct 12 00:54:40 2019 +0300
+
+    part8_links_tests
+
+[33mcommit 3f115959a6f4f8f816b1754089a1e38998934d1d[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Oct 10 22:37:28 2019 +0300
+
+    part8_create_test
+
+[33mcommit dc62a6d6e4306bdac0588c2acfa41f7b839c356b[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Thu Oct 10 16:37:42 2019 +0300
+
+    part8
+
+[33mcommit a6d6fbe60ce143e77642e8b83432451c013d2875[m[33m ([m[1;31morigin/part7[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Oct 9 17:28:38 2019 +0300
+
+    part7
+
+[33mcommit e55b2d90d72dd20a0f01d3a67c9043331af6324f[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Oct 8 19:02:19 2019 +0300
+
+    part7
+
+[33mcommit bf50e0b0b2f670d9d222b846180f2ec94adb444a[m[33m ([m[1;31morigin/part6[m[33m)[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Oct 6 22:18:55 2019 +0300
+
+    part6_fix_scopes
+
+[33mcommit db9ed237f1d8756403d2c2fbdee9ba3a282139e7[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Fri Oct 4 15:48:06 2019 +0300
+
+    part6
+
+[33mcommit 2e4ea81a79dd0e13d32321d51ea1eec495f6c434[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Fri Oct 4 15:28:51 2019 +0300
+
+    part6
+
+[33mcommit 5b593d2cf5f5562a5f729e29afe737ea19deebd4[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Oct 3 22:54:54 2019 +0300
+
+    part6
+
+[33mcommit 4071e669f798e49080059d0d3eed2623364d4bd1[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Thu Oct 3 18:33:14 2019 +0300
+
+    part6
+
+[33mcommit 7ffa5051dbc740f64b9a78bb87316bbdd06cfd2f[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Oct 2 19:01:22 2019 +0300
+
+    part6
+
+[33mcommit ded33c5af600a3614c70f196bba79e0766110ef7[m[33m ([m[1;31morigin/part5[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Oct 1 17:28:14 2019 +0300
+
+    fix part5_associations_01102019
+
+[33mcommit 5b94ca246829a19d179f62ac3f5c63d57cb41fa3[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 30 19:29:18 2019 +0300
+
+    fix part5-associations
+
+[33mcommit 45e4851bb7d00ec7472780b32c06dfff328177dd[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 30 15:38:50 2019 +0300
+
+    fix part5-associations
+
+[33mcommit 58563e56339499e12f8da0b7622cc09dbfb06020[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 30 13:27:27 2019 +0300
+
+    fix part5-associations
+
+[33mcommit 5cd1b0986ca44b18ea42e7dddc3d17f0c8622c0c[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Sep 29 22:41:55 2019 +0300
+
+    part5_fix_associations
+
+[33mcommit 1fbe507a33a99d7c81e3d17b40518056726442c3[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Sep 29 17:14:13 2019 +0300
+
+    part5_associations
+
+[33mcommit 8db99ec59e683a77496346d0d9d5aea50b926205[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Sep 29 17:02:23 2019 +0300
+
+    part5_associations
+
+[33mcommit 636aa486e84f2209d3d97ef404dd9f5f3865bf0c[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Sep 29 15:06:41 2019 +0300
+
+    part5_ER
+
+[33mcommit 3fff4a2b1b9efe28a0f2c1989b519f42a9a1f1f6[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Fri Sep 27 23:31:03 2019 +0300
+
+    part5_ER
+
+[33mcommit 59f5dc96a6509aafc032fa6a073e8577e074a0dd[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Sep 25 19:34:54 2019 +0300
+
+    fix tables part5
+
+[33mcommit da032b93c52b6fdb4ea56c631a56b3330cb36dee[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Sep 25 19:05:17 2019 +0300
+
+    part5
+
+[33mcommit 8836bef3157289078f1c80f6f92558f2483b2a23[m[33m ([m[1;31morigin/part3[m[33m)[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Sep 25 11:57:39 2019 +0300
+
+    fix part3
+
+[33mcommit ce358f35d869bce377cacc0258bdcabcc3830357[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 24 19:23:06 2019 +0300
+
+    fix part3
+
+[33mcommit 67235c165ed114dc17b8f8eba48cded344febed2[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 24 17:12:36 2019 +0300
+
+    fix part3
+
+[33mcommit a7915f9f607ebb5e42cc8789251056b4b92a6e69[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 23 19:17:17 2019 +0300
+
+    fix part3
+
+[33mcommit 46c3b9cd4f6ee5cd11be1dd5fc1e82a4a9e0e372[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 23 19:15:56 2019 +0300
+
+    fix part3
+
+[33mcommit 49f1d3ea041c5b8b720a5a6615355ecdcc45e69f[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Sun Sep 22 22:51:47 2019 +0300
+
+    part3_unfinished
+
+[33mcommit 5ada699e654dd1c3a3dafd8121b3e2bcaec1f3d6[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Fri Sep 20 16:00:08 2019 +0300
+
+    fix part3
+
+[33mcommit ae8a74bb9b61b10ff01f3176e167272904d7567b[m
+Author: CaptainK <vk2609@rambler.ru>
+Date:   Thu Sep 19 23:48:28 2019 +0300
+
+    part3
+
+[33mcommit c39e226ac98744a0e9e65da0df0b3e9c77832f95[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Wed Sep 18 13:35:23 2019 +0300
+
+    fix part2
+
+[33mcommit 1261caeabb9bce96e356a2b1cd433787d43ceb32[m
+Merge: a0cb6b3 c9927fd
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 17 18:34:10 2019 +0300
+
+    fix part2
+
+[33mcommit a0cb6b3fd533cc83d98ec821237639150934e156[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 17 18:12:19 2019 +0300
+
+    fix part2
+
+[33mcommit c9927fd95e863ffdf694e8d457b39210f91d59b6[m
+Author: captain-vk <47223030+captain-vk@users.noreply.github.com>
+Date:   Tue Sep 17 13:38:41 2019 +0200
+
+    Update README.md
+
+[33mcommit 4de5cf25cf13b94707009f2625bf639f0aba3364[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 17 12:56:30 2019 +0300
+
+    edit README.md
+
+[33mcommit 4f2a24d87ab718214c161958a17e5ac202ec5fbd[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 17 12:39:32 2019 +0300
+
+    add about and author
+
+[33mcommit c3d6ce027d25b0c7dab88192fa8dc6e9dccfd85d[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 17 12:36:10 2019 +0300
+
+    add version
+
+[33mcommit ad4c38adf2902b955d0e98b194db635e8ce78dc3[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Tue Sep 17 12:34:29 2019 +0300
+
+    add about and author
+
+[33mcommit 0688ac0018db3a9b7e06e130902db7d690d02e66[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 16 18:23:04 2019 +0300
+
+    time zone and language
+
+[33mcommit 67229e02684e548895c5345c266acdbfa9ec7f1e[m
+Author: captain-vk <vk2609@rambler.ru>
+Date:   Mon Sep 16 18:17:59 2019 +0300
+
+    TestGuru
