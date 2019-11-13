@@ -11,5 +11,9 @@ module ApplicationHelper
 
   def flash_message(type)
     content_tag :p, flash[type], class: "flash #{type}" if flash[type]
- end
+  end
+
+  def bootstrap_flash(flash_type)
+    {success: 'alert-success', error: 'alert-error', alert: 'alert-block', notice: 'alert-info'}[flash_type]
+  end  
 end

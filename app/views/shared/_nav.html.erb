@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light">
-  <%= link_to 'TestGuru', root_path, class: 'nav-pills' %>
-  <%= link_to 'AdminPanel', admin_tests_path, class: 'nav-pills' if current_user.is_a?(Admin) %>
+  <%= link_to 'TestGuru', root_path, class: 'nav nav-pills' %>
+  <%= link_to 'AdminPanel', admin_tests_path, class: 'nav nav-pills' if current_user.is_a?(Admin) %>
 
   <span class="navbar-text">
     <% if user_signed_in? %>
