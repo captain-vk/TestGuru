@@ -14,6 +14,6 @@ module ApplicationHelper
   end
 
   def bootstrap_flash(flash_type)
-    {success: 'alert-success', error: 'alert-error', alert: 'alert-block', notice: 'alert-info'}[flash_type]
-  end  
+    { success: 'alert-success', error: 'alert-error', alert: 'alert-block', notice: 'alert-info' }[flash_type]
+  end
 end
