@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def flash_message(type)
-    content_tag :p, flash[type], class: "flash #{type}" if flash[type]
+    content_tag :p, flash[type], class: "flash #{bootstrap_flash(type)}" if flash[type]
   end
 
   def bootstrap_flash(flash_type)
