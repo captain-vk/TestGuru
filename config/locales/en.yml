@@ -27,7 +27,7 @@ en:
 
   test_passages:
     gist:
-      success: "Gist was successfully created"
+      success: <a href="%{url}">Gist</a> "Gist was successfully created" 
       failure: "Error saving gist"
     result:
       header: "The '%{title}' test was completed!"

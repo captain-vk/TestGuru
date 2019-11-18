@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise', '~> 4.0'
 gem 'faraday'
+gem 'dotenv-rails', groups: %i[development test]
 gem 'rails-i18n', '~> 6.0.0'
 
 gem 'jquery-rails'

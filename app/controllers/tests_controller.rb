@@ -20,4 +20,8 @@ class TestsController < ApplicationController
   def set_test
     @test = Test.find(params[:id])
   end
+
+  def create_gist!(url)
+    current_user.gists.create!(question: @test_passage.current_question, url: url)
+  end
 end

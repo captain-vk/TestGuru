@@ -5,6 +5,7 @@ class GistQuestionService
     @question = question
     @test = @question.test
     @client = client || GitHubClient.new
+    #@client = client || Octokit::Client.new
   end
 
   def call
