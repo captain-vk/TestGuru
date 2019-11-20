@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
 class GistQuestionService
-  def initialize(question, client: nil)
+  def initialize(question, client = default_client)
     @question = question
     @test = @question.test
-    @client = client || GitHubClient.new
-    #@client = client || Octokit::Client.new
+    @client = client
   end
 
   def call
@@ -13,6 +12,10 @@ class GistQuestionService
   end
 
   private
+
+  def default_client
+    Octokit::Client.new(access_token: ENV['GITHUB_GIST_TOKEN'])
+  end
 
   def gist_params
     {
