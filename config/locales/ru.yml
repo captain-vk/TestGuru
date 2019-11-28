@@ -27,7 +27,7 @@ ru:
 
   test_passages:
     gist:
-      success: "Gist успешно сохранен"
+      success: <a href= "%{url}">Gist успешно сохранен!!</a>
       failure: "Произошла ошибка во время сохранения"    
     result:
       header: "Тест '%{title}' успешно завершен!"

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class GistQuestionService
+  attr_reader :response
   def initialize(question, client = default_client)
     @question = question
     @test = @question.test
@@ -9,6 +10,11 @@ class GistQuestionService
 
   def call
     @client.create_gist(gist_params)
+    @response = @client.create_gist(gist_params)
+  end
+
+  def success?
+    @client.last_response.data[:html_url]
   end
 
   private
