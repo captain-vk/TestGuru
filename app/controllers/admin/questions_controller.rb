@@ -20,7 +20,7 @@ class Admin::QuestionsController < Admin::BaseController
     @question = @test.questions.build(question_params)
 
     if @question.save
-    redirect_to [:admin, @question.test], notice:'Вопрос создан.'
+      redirect_to [:admin, @question.test], notice: 'Вопрос создан.'
     else
       render :new
     end

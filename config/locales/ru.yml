@@ -26,6 +26,9 @@ ru:
         category_id: "Категория"
 
   test_passages:
+    gist:
+      success: <a href= "%{url}">Gist успешно сохранен!!</a>
+      failure: "Произошла ошибка во время сохранения"    
     result:
       header: "Тест '%{title}' успешно завершен!"
       all_tests: "Все тесты"

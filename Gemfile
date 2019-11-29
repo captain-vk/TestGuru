@@ -28,7 +28,10 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 gem 'devise', '~> 4.0'
+gem 'faraday'
+gem 'dotenv-rails', groups: %i[development test]
 gem 'rails-i18n', '~> 6.0.0'
+gem 'octokit', '~> 4.0'
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'

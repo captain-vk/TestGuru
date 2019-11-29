@@ -1,0 +1,5 @@
+<tr>
+  <td><%= link_to gist.question.body, truncate(gist.question.body, length: 25) %></td>
+  <td><%= link_to gist.url, target: '_blank' %></td>
+  <td><%= gist.user.email %></td>  
+</tr>

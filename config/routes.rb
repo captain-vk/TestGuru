@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :test_passages, only: %i[show update] do
     member do
       get :result
+      post :gist
     end
   end
 
@@ -22,6 +23,7 @@ Rails.application.routes.draw do
         resources :answers, shallow: true, except: :index
       end
     end
+    resources :gists, only: :index
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

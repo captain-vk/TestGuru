@@ -25,7 +25,9 @@ en:
         level: "Level"
         category_id: "Category"
 
-  test_passages:
+    gist:
+      success: <a href="%{url}">Gist was successfully created!</a>
+      failure: "Error saving gist"
     result:
       header: "The '%{title}' test was completed!"
       all_tests: "All tests"
